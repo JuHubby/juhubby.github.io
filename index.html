@@ -4,664 +4,319 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    
-/*PORTFOLIO PAGE  */
-* {
-  box-sizing: border-box;
-}
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), 
-  url("background_foto3.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #D9DDDC;
-}
-a:link {
-color: lightskyblue;
-background-color: transparent;
-text-decoration: none;
-}
-a:visited {
-color: darkgoldenrod;
-background-color: transparent;
-text-decoration: none;
-}
-a:hover {
-color: darkkhaki;
-background-color: transparent;
-text-decoration: underline;
-}
-a:active {
-color: limegreen;
-background-color: transparent;
-text-decoration: underline;
-}
-
-body {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), 
-  url("snowbackgroundresize.png"); */
-  background-color: #D9DDDC; 
-  padding: 0px;
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  text-align: center;
-  position: relative;
-} 
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 60px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #3F6669;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-/* HOME PAGE */
-
-.card {
-        /* transition: all 1.5s; */
-        transition: all 0.3s;
-}
-
-.card:hover {
-  /* transform: rotate(360deg); */
-  transform: translate3d(0, -.5rem, 0);
-}
-
-.spin {
-  transition: all 1.5s;
-  /* transition: all 0.3s; */
-}
-
-.spin:hover {
-  transform: rotate(360deg);
-  /* transform: translate3d(0, -.125rem, 0); */
-}
-
-:root {
-  --bs-body-font-family:'Montserrat', sans-serif;
-}
-
-</style>
+  </style>
 </head>
 <body>
-
-
-
-<!-- MAIN (Center website) -->
-
-
-
-<!-- MAIN (Center website) -->
-<!-- HEADER -->
-<!-- logo -->
-
-<nav class="navbar fixed-top p-4" style="background-color: #EBE6E6;">
-  <div class="container-fluid">
-    <a class="navbar-brand " href="#"></a>
-  
-    <div class="fixed-top"> 
-        <div class="d-flex justify-content-center ">
-          <nav class="navbar mt-5" style="background-color: #EBE6E6;"  >
-            <div class="container-fluid">
-                <div class="position-absolute top-0 start-50 translate-middle mt-2">
-
-                <a class="navbar-brand p-0 m-0" href="#">  
-                  <div class="card border border-2 rounded-circle">
-                  <img class=" spin rounded-circle  " style="background-color: #FFC26F;"  src="logo-platto2.svg" alt="logo-platto" width="100" height="100" class="d-inline-block align-text-top " >
+  <main class="landing-page">      
+    <header>
+      <nav class="navbar fixed-top p-4" style="background-color: #EBE6E6;">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="/index.html"></a>
+          <div class="fixed-top"> 
+              <div class="d-flex justify-content-center ">
+                <nav class="navbar mt-5" style="background-color: #EBE6E6;"  >
+                  <div class="container-fluid">
+                      <div class="position-absolute top-0 start-50 translate-middle mt-2">
+                      <a class="navbar-brand p-0 m-0" href="#">  
+                        <div class="card border border-2 rounded-circle">
+                        <img class=" spin rounded-circle" style="background-color: #FFC26F;"  src="logo-platto2.svg" alt="logo-platto" width="100" height="100" class="d-inline-block align-text-top " >
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+                  <!-- navbar options -->
+                  <div class="position-absolute top-0 start-0">
+                    <nav class="navbar navbar-expand-lg " style="background-color: #EBE6E6;">
+                        <div class="container-md">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                            </li>                
+                            </ul>
+                        </div>                
+                        </div>
+                    </nav>
                 </div>
-                </a>
+              </div>
+          </div>
+        </div>
+      </nav> 
+    </header>
+    <core>
+      <!-- start background core -->
+      <div class="core-overlay"></div>
+      <div class="core-background" class="card mb-0">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <img src="background (1).svg"  class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="background (2).svg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="background (3).svg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="background (4).svg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="background (5).svg" class="d-block w-100 " alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="core-intro pb-0" >
+        <div class="intro-video">
+          <div class="container">
+            <div class="d-flex justify-content-center ">
+              <div class="embed-responsive embed-responsive 16by9 ">
+                <iframe class="rounded-4 " width="560" height="315" src="https://www.youtube.com/embed/m474U0xDP8s?si=Kdjf0zgichiUKoK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
-          </nav>
+          </div>         
         </div>
-    </div>
-  </div>
-</nav> 
-
-<!-- START CAROUSEL BACKGROUND PICS  -->
-
-<div class="card mb-0">
-    
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner" >
-      <div class="carousel-item active">
-        <img src="background (1).svg"  class="d-block w-100 opacity-50" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="background (2).svg" class="d-block w-100 opacity-50" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="background (3).svg" class="d-block w-100 opacity-50" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="background (4).svg" class="d-block w-100 opacity-50" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="background (5).svg" class="d-block w-100 opacity-50" alt="...">
-      </div>
-    </div>
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button> -->
-  </div>
-
-  <div class="card-img-overlay">
-    <h5 class="card-title p-5 m-5"></h5>
-
-    <!-- BOX OF VIDEO AND BIO AND MEDIA LINKS-->
-  
-    <section class=" rounded-3 p-3 mb-0  text-white opacity-75" style="background-color: #EBE6E6;" >
-      <div class="container">
-        <div class="d-flex justify-content-start ">
-          <div class="embed-responsive embed-responsive 16by9 ">
-            <iframe class="mx-auto p-2  rounded-4 " width="560" height="315" src="https://www.youtube.com/embed/m474U0xDP8s?si=Kdjf0zgichiUKoK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          
-          </div>
-
-      
-        <!-- BIO -->
-        <section class=" text-dark text-center text-sm-start opacity-100">
+      <div class="intro-info">
+        <section class=" text-dark text-center text-sm-start">
           <div class="container-fluid text-center">
             <div class="d-sm-flex align-items-center justify-content-between">
               <div class=" opacity-100" >
-                <h1>Julieth <span class="text-success opacity-100">  Kruse </span></h1>
-                <p>Jr. Web Developer | Nature Enthusiast | Minimalism Perfectionist | Jovial Spirit</h4>
-                
-                <h5 class="lead my-4 pb-4">
-                  Hey there!  I'm Julieth Kruse, a curious soul on a journey in coding. I call the beautiful city of Norfolk-NE my home, a friendly and community-oriented atmosphere. I am originally from Colombia, and I 'm passionate about web design and creativity. Let's connect and collaborate on your website's design and functionality.
-                </h4>
-
-                
-
-                <!-- link social media  -->
-
-                
-                
-                <nav class="navbar    w-auto p-0 m-5 " style="background-color: #F0A298;">
-                  <div class="container-fluid ">
-                    <a class="navbar-brand " href="#"></a>
-
-                    <!-- git username link -->
-                      <div class="position-absolute top-50 start-0 translate-middle-y ">
-                        <a class="navbar-brand p-0 m-0" href="https://www.linkedin.com/in/julieth-bautista-becerra-39318b99/">  
-                          <div class="card border border-2 rounded-circle ">
-                          <img class="  rounded-circle border border-black border border-5  " style="background-color: #FFC26F;"  src="media-linkedin.svg" alt="logo-platto" width="75" height="75" class="d-inline-block align-text-top " >
-                          </div>
-                        </a>
-                      </div>
-
-                    <!-- linkedin link -->
-                      <div class="position-absolute top-50 start-50 translate-middle">
-                        <a class="navbar-brand p-0 m-0" href="https://github.com/JuHubby?tab=repositories">  
-                          <div class="card border border-2 rounded-circle">
-                          <img class="  rounded-circle border border-black border border-5  " style="background-color: #FFC26F;"  src="media (2).svg" alt="logo-platto" width="75" height="75" class="d-inline-block align-text-top " >
-                        </div>
-                        </a>
-                      </div>
-
-                    <!-- email link -->
-                      <div class="position-absolute top-50 end-0 translate-middle-y">
-                        <a class="navbar-brand p-0 m-0" href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcRzDfbQDXvWGZrlRFWWqJjPnPcGWnfHgdsTsvFwHcBCXPShzkwdmdPsSSbHVcXGlfVszlWpn">  
-                          <div class="card border border-2 rounded-circle">
-                          <img class="  rounded-circle border border-black border border-5 " style="background-color: #FFC26F;"  src="media (3).svg" alt="logo-platto" width="75" height="75" class="d-inline-block align-text-top " >
-                        </div>
-                        </a>
-                      </div>
-                    
-                  </div>
-                </nav>
-
+                <h1>Julieth <span class="text-success">  Kruse </span></h1>
+                <p>Jr. Web Developer | Nature Enthusiast | Minimalism Perfectionist | Jovial Spirit</p>
+                <h2 class="lead my-4 pb-4">
+                Hey there!  I'm Julieth Kruse, a curious soul on a journey in coding. I call the beautiful city of Norfolk-NE my home, a friendly and community-oriented atmosphere. I am originally from Colombia, and I 'm passionate about web design and creativity. Let's connect and collaborate on your website's design and functionality.
+                </h2>
               </div>
             </div>
           </div>
         </section>
-      
-        </div>
       </div>
-    </section>
-
-    <p class="card-text"></p>
-    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
- 
-
-      <!-- PORTFOLIO -->
-      
-
-      <div class=" border border-2 rounded-circle text-align ">
-        <div class="bg-dark text-light p-5 " >
-          <h1 class=" mp-5 text-center --bs-light-text-emphasis " >  CHECK OUT MY PORTFOLIO !  </h1>
-          <p class="lead my-4"></p>
-
-          <div class="container p-1">
-            <div class="mx-auto text-center">
-             <button type="button" class="btn btn-primary  ">See all</button>
-         </div>
-       </div>
-            
-            
-
-            <!-- sections portoflio -->
-
-
-            <div class="card-group" >
-              <div class="card p-2">
-                <img src="coverjoined (1).svg" class="card-img-top" alt="...">
-                <div class="card-body " style="background-color: #EBE6E6;">
-                  <h5 class="card-title">Dynamic Objects</h5>
-                  <p class="card-text">Bouncing Figures Animation; Pac-Men creator, and Bubble Maker dynamically inject elements into a web page.</p>
-                  <a href="#" class="btn btn-primary">Check it out</a>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+    <div class="contact-bar">
+      <!-- link social media  -->
+      <nav class="navbar    w-auto p-0 m-0 " style="background-color: #F0A298;">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="#"></a>
+          <!-- linkedin link -->
+            <div class="position-absolute top-50 start-0 translate-middle-y ">
+              <a class="navbar-brand p-0 m-0" href="https://www.linkedin.com/in/julieth-bautista-becerra-39318b99/">  
+                <div class="card border border-2 rounded-circle ">
+                <img class="  rounded-circle border border-black border border-5  " style="background-color: #FFC26F;"  src="media-linkedin.svg" alt="logo-linkedin" width="75" height="75" class="d-inline-block align-text-top " >
                 </div>
+              </a>
+            </div>
+          <!-- git username link -->
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <a class="navbar-brand p-0 m-0" href="https://github.com/JuHubby?tab=repositories">  
+                <div class="card border border-2 rounded-circle">
+                <img class="  rounded-circle border border-black border border-5  " style="background-color: #FFC26F;"  src="media (2).svg" alt="logo-github" width="75" height="75" class="d-inline-block align-text-top " >
               </div>
-              <div class="card p-2">
-                <img src="coverjoined (2).svg" class="card-img-top" alt="...">
-                <div class="card-body"  style="background-color: #D2AB91;">
-                  <h5 class="card-title">Dynamic Website</h5>
-                  <p class="card-text">Interactive Object Movement on Restaurant Website, and Retail Website with Dynamic Cursor Control.</p>
-                  <a href="#" class="btn btn-primary">Check it out</a>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
+              </a>
+            </div>
+          <!-- email link -->
+            <div class="position-absolute top-50 end-0 translate-middle-y">
+              <a class="navbar-brand p-0 m-0" href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcRzDfbQDXvWGZrlRFWWqJjPnPcGWnfHgdsTsvFwHcBCXPShzkwdmdPsSSbHVcXGlfVszlWpn">  
+                <div class="card border border-2 rounded-circle">
+                <img class="  rounded-circle border border-black border border-5 " style="background-color: #FFC26F;"  src="media (3).svg" alt="logo-email" width="75" height="75" class="d-inline-block align-text-top " >
               </div>
-              <div class="card p-2">
-                <img src="dynamictablescover.png" class="card-img-top" alt="...">
-                <div class="card-body"  style="background-color: #CD9F55;">
-                  <h5 class="card-title">Dynamic Tables</h5>
-                  <p class="card-text">Dynamic Tables: Boston Salary Database with 20,000+ Entries.</p>
-                  <a href="#" class="btn btn-primary">Check it out</a>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card p-2">
-                <img src="blogtemplate.jpg" class="card-img-top" alt="...">
-                <div class="card-body"  style="background-color: #F0A298;">
-                  <h5 class="card-title">Blog Multimedia</h5>
-                  <p class="card-text">Blog-Styled Website: Kickstarting Your GitHub Journey with Repository Creation.</p>
-                  <a href="#" class="btn btn-primary">Check it out</a>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card p-2">
-                <img src="cover-live-bus.jpg" class="card-img-top" alt="...">
-                <div class="card-body"  style="background-color: #8A9480;">
-                  <h5 class="card-title">Website Real-Time Interaction</h5>
-                  <p class="card-text">LiveRide Washington: Real-Time Bus Tour Tracking Website.</p>
-                  <a  href="#" class="btn btn-primary">Check it out</a>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </a>
+            </div>            
+        </div>
+      </nav>
+    </div>
+    <div class="teaser-portfolio">
+        <div class="teaser-portfolio-header">
+          <div class=" text-align ">
+            <div class="bg-dark text-light p-5 " >
+              <h1 class=" mp-5 text-center --bs-light-text-emphasis " >  CHECK OUT MY PORTFOLIO !  </h1>
+              <p class="lead my-4"></p>
+
+              <!-- button -->
+              <div class="container p-1">
+                <div class="mx-auto text-center">
+                  <button type="button" class="btn btn-primary  " href="/pages/projects_page/index.html">See all</button>
                 </div>
               </div>
             </div>
-
-            
-            
-        
-
-         
-
-          
+          </div>
         </div>
-      </div>
-   
+        <div class="teaser-portfolio-body">
+          <!-- sections portoflio -->
+          <div class="card-group" >
+            <div class="card p-2">
+              <img src="coverjoined (1).svg" class="card-img-top" alt="...">
+              <div class="card-body " style="background-color: #EBE6E6;">
+                <h5 class="card-title">Dynamic Objects</h5>
+                <p class="card-text">Bouncing Figures Animation; Pac-Men creator, and Bubble Maker dynamically inject elements into a web page.</p>
+                <a href="#" class="btn btn-primary">Check it out</a>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card p-2">
+              <img src="coverjoined (2).svg" class="card-img-top" alt="...">
+              <div class="card-body"  style="background-color: #D2AB91;">
+                <h5 class="card-title">Dynamic Website</h5>
+                <p class="card-text">Interactive Object Movement on Restaurant Website, and Retail Website with Dynamic Cursor Control.</p>
+                <a href="#" class="btn btn-primary">Check it out</a>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card p-2">
+              <img src="dynamictablescover.png" class="card-img-top" alt="...">
+              <div class="card-body"  style="background-color: #CD9F55;">
+                <h5 class="card-title">Dynamic Tables</h5>
+                <p class="card-text">Dynamic Tables: Boston Salary Database with 20,000+ Entries.</p>
+                <a href="#" class="btn btn-primary">Check it out</a>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card p-2">
+              <img src="blogtemplate.jpg" class="card-img-top" alt="...">
+              <div class="card-body"  style="background-color: #F0A298;">
+                <h5 class="card-title">Blog Multimedia</h5>
+                <p class="card-text">Blog-Styled Website: Kickstarting Your GitHub Journey with Repository Creation.</p>
+                <a href="#" class="btn btn-primary">Check it out</a>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card p-2">
+              <img src="cover-live-bus.jpg" class="card-img-top" alt="...">
+              <div class="card-body"  style="background-color: #8A9480;">
+                <h5 class="card-title">Website Real-Time Interaction</h5>
+                <p class="card-text">LiveRide Washington: Real-Time Bus Tour Tracking Website.</p>
+                <a  href="#" class="btn btn-primary">Check it out</a>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!-- end background core -->    
+    </core>
+    <menubar>
+      <nav class="navbar sticky-top p-3" style="background-color: #3F6669;">
+        <div class="d-flex justify-content-center ">
+          <div class="navbar-brand mt-5 mb-4" href="#">
+            <div class="position-absolute bottom-0 start-50 translate-middle ">
+              <a class="navbar-brand p-0 m-0" href="#">  
+                <img class="card border border-0 rounded-circle " style="background-color: #EBE6E6;" src="logo-platto-light.svg" alt="logo-platto-"  width="100" height="100" class="d-inline-block align-text-top " >
+              </a>
+            </div>
+            <!-- navbar options -->
+            <div class="position-absolute bottom-0 start-0">
+            <nav class="navbar navbar-expand-lg " style="background-color: #3F6669;">
+              <div class="container-md">
+                <a class="navbar-brand" href="#"></a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                    </li>
 
+                  </ul>
+                </div>
 
-
-
-
-<!-- END BACKGROUND CAROUSEL -->
-  </div>
-</div>
-
-<!-- Navigation Bar -->
-
-<!-- Navbar logo placement -->
-
-<nav class="navbar sticky-top p-3" style="background-color: #3F6669;">
-<div class="d-flex justify-content-center ">
-    <div class="navbar-brand mt-5 mb-4" href="#">
-      <div class="position-absolute bottom-0 start-50 translate-middle ">
-        <a class="navbar-brand p-0 m-0" href="#">  
-          <img class="card border border-0 rounded-circle " style="background-color: #EBE6E6;" src="logo-platto-light.svg" alt="logo-platto-"  width="100" height="100" class="d-inline-block align-text-top " >
-        </a>
-      </div>
-
-
-      <!-- navbar options -->
-      <div class="position-absolute bottom-0 start-0">
-      <nav class="navbar navbar-expand-lg " style="background-color: #3F6669;">
-        <div class="container-md">
-          <a class="navbar-brand" href="#"></a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              </div>
+            </nav>
+            </div>
+          </div>
+        </div>
+      </nav>  
+    </menubar>
+    <bulletin>
+      <div id="carouselExampleCaptions" class="carousel slide bg-dark text-dark">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="tips (1).svg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-dark mp-5">
+              <h2 >"Key Considerations Before Choosing Your Website"</h2>
+              <h3>1. What is the point of the Website?</h3>
+              <p>Work in progress...</p>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="tips (2).svg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h2>Key Considerations Before Choosing Your Website</h2>
+              <h3>2. What content do you need?</h3>
+              <p>Work in progress...</p>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="tips (3).svg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h2>Key Considerations Before Choosing Your Website</h2>
+              <h3>2. What content do you need?</h3>
+              <p>Work in progress...</p>
+              
+            </div>
+          </div>
+        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
-              </li>
-
-            </ul>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </bulletin>
+    <footer>
+      <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+          <div class="d-sm-flex align-items-center justify-content-between">
+            <div></div> 
+              <div class="row" width="auto">
+                <div class="col-12 col-md">
+                </div>
+              </div>
+            </div>
           </div>
-
-        </div>
-      </nav>
-      </div>
-
-
-
-
-  </div>
-</div>
-</nav> 
-
-
-<!-- TIPS CAROUSEL -->
-
-<div id="carouselExampleCaptions" class="carousel slide bg-dark text-dark">
-<div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-</div>
-<div class="carousel-inner ">
-  <div class="carousel-item active">
-    <img src="tips (1).svg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block text-dark mp-5">
-      <h2 >"Key Considerations Before Choosing Your Website"</h2>
-      <h3>1. What is the point of the Website?</h3>
-      <p>Work in progress...</p>
-      
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="tips (2).svg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block text-dark">
-      <h2>Key Considerations Before Choosing Your Website</h2>
-      <h3>2. What content do you need?</h3>
-      <p>Work in progress...</p>
-      
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="tips (3).svg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block text-dark">
-      <h2>Key Considerations Before Choosing Your Website</h2>
-      <h3>2. What content do you need?</h3>
-      <p>Work in progress...</p>
-      
-    </div>
-  </div>
-
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-</div>
-
-
-<!-- FOOTER -->
-
-<section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-<div class="container">
-  <div class="d-sm-flex align-items-center justify-content-between">
-    <div></div> 
-      <div class="row" width="auto">
-        <div class="col-12 col-md">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-  
-<!-- FOOTER FIXED-->
-  <nav class="navbar fixed-bottom bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">@JuliethKruse</a>
-
-<!-- BLOCKIES -->
-      <div class="card d-sm-flex" >
-        <img src="blockies_JPBB.png" width="30" height="24" class="card-img-top" alt="...">
-        
-        </div>
-
-      </div>
-  </nav>
-
-<!-- END MAIN (Center website) -->
-
-<!-- START PORTFOLIO PAGE -->
-
-<div class="main">
-
-<h1>Creative Catalog</h1>
-<hr>
-
-<h2>Digital Interactivity and Content</h2>
-
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('Dynamic Objects')"> Dynamic Objects</button>
-  <button class="btn" onclick="filterSelection('Dynamic Website')"> Dynamic Website</button>
-  <button class="btn" onclick="filterSelection('Blog Multimedia')"> Blog Multimedia</button>
-  <button class="btn" onclick="filterSelection('Dynamic Tables')"> Dynamic Tables</button>
-  <button class="btn" onclick="filterSelection('Website Real-Time Interaction')"> Website Real-Time Interaction</button>
-
-</div>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column Dynamic Objects">
-    <div class="content">
-      <img src="bouncingballscover.png" alt="Bouncing Figures Animation: Playful Motion in Action" style="width:100%">
-      <h4><a href="https://juhubby.github.io/bouncingballs/" target="_blank">Bouncing Figures Animation: Playful Motion in Action</a></h4>
-      <p></p>
-    </div>
-    <div class="content">
-      <img src="Pacmen-exercise.png" alt="Pac-Men creator: Dynamically inject images into a web page" style="width:100%">
-      <h4><a href="https://juhubby.github.io/pacmen-exercise/" target="_blank">Pac-Men creator: Dynamically Inject Content Into A Web Page</a></h4>
-      <p></p>
-    </div>
-    <div class="content">
-      <img src="cover-bubbleMaker.png" alt="Bubble Maker: Dynamically inject elements into a web page" style="width:100%">
-      <h4><a href="https://juhubby.github.io/bubbles-machine/" target="_blank">Bubble Maker: Dynamically inject elements into a web page</a></h4>
-      <p></p>
-    </div>
-  </div>
-
-  
-  <div class="column Dynamic Website">
-    <div class="content">
-      <img src="pacmancover.png" alt="Pac-Man Burger: Interactive Object Movement on Restaurant Website" style="width:100%">
-      <h4><a href="https://juhubby.github.io/pacman.burguer/" target="_blank">Pac-Man Burger: Interactive Object Movement on Restaurant Website</a></h4>
-      <p></p>
-    </div>
-    <div class="content">
-      <img src="website-retail-store.png" alt="Retail Website with Dynamic Cursor Control" style="width:100%">
-      <h4><a href="https://juhubby.github.io/store-website/" target="_blank">"Retail Website with Dynamic Cursor Control"</a></h4>
-      <p></p>
-    </div>
-  </div>
-  
-
-  <div class="column Blog Multimedia">
-    <div class="content">
-      <img src="blogtemplate.jpg" alt="Blog-Styled Website: Kickstarting Your GitHub Journey with Repository Creation" style="width:100%">
-      <h4><a href="https://juhubby.github.io/helloworld/" target="_blank">Blog-Styled Website: Kickstarting Your GitHub Journey with Repository Creation</a></h4>
-      <p></p>
-    </div>
-  </div>
-
-
-  <div class="column Dynamic Tables">
-    <div class="content">
-      <img src="dynamictablescover.png" alt="Dynamic Tables: Boston Salary Database with 20,000+ Entries" style="width:100%">
-      <h4><a href="https://juhubby.github.io/dynamic.data/" target="_blank">Dynamic Tables: Boston Salary Database with 20,000+ Entries</a></h4>
-      <p></p>
-    </div>
-  </div>
-
-  <div class="column Website Real-Time Interaction">
-    <div class="content">
-      <img src="cover-live-bus.jpg" alt="LiveRide Washington: Real-Time Bus Tour Tracking Website" style="width:100%">
-      <h4><a href="https://juhubby.github.io/Real-Time-Bus-Tour-Website/" target="_blank">"LiveRide Washington: Real-Time Bus Tour Tracking Website"</a></h4>
-      <p></p>
-    </div>
-  </div>
-
-<!-- FOOTER -->
-
-<section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-  <div class="container">
-    <div class="d-sm-flex align-items-center justify-content-between">
-      <div></div> 
-        <div class="row" width="auto">
-          <div class="col-12 col-md">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-
-<!-- END PORTFOLIO PAGE -->
-
-
-
-
-<script>
-
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-</script>
+      </section>
+        <!-- FOOTER FIXED-->
+          <nav class="navbar fixed-bottom bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">@JuliethKruse</a>
+                <!-- BLOCKIES -->
+                <div class="card d-sm-flex" >
+                  <img src="blockies_JPBB.png" width="30" height="24" class="card-img-top" alt="...">
+                </div>
+            </div>
+          </nav>
+    </footer>
+  </main>
+    <!-- END landing website -->  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

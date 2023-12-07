@@ -1,0 +1,167 @@
+:root {
+    --bs-body-font-family:'Montserrat', sans-serif;
+    --bs-body-bg: #EBE6E6;
+    }
+  
+  body {
+    background-color: var(--bs-body-bg);
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative; 
+  }
+  .landing-page {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 5px;
+    height: 99vh;
+  }
+  
+  header {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    
+  }
+  
+  core {
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 2 / 7;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(5, auto);
+    gap: 5px;
+    background-color: var(--bs-body-bg);
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+  }
+  
+  .core-background {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .core-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bs-body-bg);
+    z-index: 2;
+    opacity: 0.5;
+  }
+  
+  .core-intro {
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+    grid-template-columns: subgrid ;
+    grid-template-rows: repeat(2, auto) ;
+    gap: 5px;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(233, 237, 237, 0.4);
+    color: #110705;
+    z-index: 2;
+    border-radius: 0.1cm;
+  }
+  
+  .intro-video {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+  }
+  
+  .intro-info {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    text-wrap: wrap;
+    background-color: rgb(63, 102, 105,0.7);
+    border-radius: 0.1cm;
+  }
+  
+  .contact-bar {
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    background-color: rgb(233, 237, 237, 0.5 );
+    color: #110705;
+    z-index: 3;
+  }
+  
+  
+  .teaser-portfolio {
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 5 / 7;
+    grid-template-columns: subgrid ;
+    grid-template-rows: repeat(2, auto) ;
+    gap: 0px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgba(16, 16, 16, 0.7 );
+    position: relative;
+    z-index: 2;
+  
+  }
+  
+  .teaser-portfolio-header {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+  }
+  
+  .teaser-portfolio-body {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+  }
+  
+  menubar {
+    grid-column: 1 / 6;
+    grid-row: 7 / 8;
+    background-color: rgb(225, 233, 233);
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+  
+  bulletin {
+    grid-column: 1 / 6; 
+    grid-row: 8 / 9;
+    background-color: rgb(225, 233, 233);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  footer {
+    grid-column: 1 / 6;
+    grid-row: 9 / 10;
+    background-color: var(--bs-body-bg);
+    text-align: center;
+    padding: 0px;
+    position: relative; 
+  }
+  
+  .card {
+    transition: all 0.3s;
+  }
+  
+  .card:hover {
+  transform: translate3d(0, -.5rem, 0);
+  }
+  
+  .spin {
+  transition: all 1.5s;
+  }
+  
+  .spin:hover {
+  transform: rotate(360deg);
+  }
+  
+  
+    
