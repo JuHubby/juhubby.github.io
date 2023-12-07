@@ -6,16 +6,6 @@ This is my portfolio, showcasing a collection of projects, assignments, and crea
 
 ## How to Run:
 
-As explained on the webpage, you will need to have the following before creating your repository:
-
- - Create a GitHub account if you don't have one already.
- - Download and install Visual Studio Code (VSCode).
- - Download and install Git Bash.
-
-After obtaining the above, the remaining steps are explained on the website.
-
-## Usage:
-
 No specific programs or modules are required to run this repo; it functions as my portfolio and serves as both the landing page and project overview. Feel free to explore inside the repo for links to my developed repositories, each accompanied by a description. For your convenience, I've also included the links to the showcased repositories on the website.
 
  - <a href=" https://juhubby.github.io/pacmen-exercise/"> Pac-Men Exercise></a>
